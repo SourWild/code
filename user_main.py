@@ -26,7 +26,7 @@ def time_pit_handler(time):
     ticker_flag = True
     
 #时钟
-pit1 = ticker(1)# 实例化 PIT ticker 模块 参数为编号 [0-3] 最多四个
+pit1 = ticker(1)# 实例化 PIT ticker 模块 参数为编号 [0-3] 最多 四个
 pit1.capture_list(ccd,encoder_l, encoder_r)# 关联采集接口 最少一个 最多八个
 
 pit1.callback(time_pit_handler)
